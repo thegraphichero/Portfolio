@@ -1,0 +1,10 @@
+.app__cursor {
+  height: 32px;
+  width: 32px;
+  border: 2px solid var(--darkGray-color);
+  border-radius: 50%;
+
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+}

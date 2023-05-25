@@ -1,13 +1,24 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Libre+Franklin:wght@100;300&family=Montserrat:wght@600&display=swap");
+/*
+// font-family: 'League Spartan', sans-serif;
+// font-family: 'Libre Franklin', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --font-league: "League Spartan", sans-serif;
+  --font-base: "Libre Franklin", sans-serif;
+  --darkGray-color: #353535;
+  --primary-color: #edf2f8;
+  --red-color: #dc3545;
+  --secondary-color: #dbdbdb;
+  --black-color: #030303;
+  --lightGray-color: #e4e4e4;
+  --gray-color: #6b7688;
+  --white-color: #ffffff;
 }

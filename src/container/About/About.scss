@@ -1,0 +1,61 @@
+.app__about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+}
+
+.app__about-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding-right: 2rem;
+  padding-top: 3rem;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+
+    padding: 2rem 3rem;
+  }
+}
+
+.app__about-mainText {
+  color: var(--darkGray-color);
+  h1 {
+    font-size: 7rem;
+  }
+  p {
+    font-weight: 50;
+    max-width: 600px;
+    letter-spacing: 2px;
+    line-height: 23px;
+    color: #bebebe;
+    span {
+      font-weight: bold;
+      color: white;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    h1 {
+      font-size: 3rem;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      width: 100%;
+    }
+  }
+}
+.app__about-button {
+  padding-top: 2rem;
+}
+
+.app__about-bgImg img {
+  width: 800px;
+  opacity: 0.05;
+  @media screen and (max-width: 1200px) {
+    width: 120%;
+  }
+}

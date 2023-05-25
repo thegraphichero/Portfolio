@@ -1,0 +1,126 @@
+.app__navbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1rem 1rem;
+  backdrop-filter: blur(1px);
+  cursor: none;
+  position: fixed;
+  z-index: 3;
+
+  .app__navbar-line {
+    position: relative;
+
+    margin-top: 2rem;
+    display: block;
+    width: 80%;
+    height: 1px;
+    border: none;
+    border-top: 2px solid #1a1a1a;
+
+    @media screen and (max-width: 900px) {
+      display: none;
+    }
+  }
+}
+.app__navbar-links {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  border: 2px solid #1a1a1a;
+
+  li {
+    padding: 1.5rem;
+
+    a {
+      font-family: var(--font-league);
+      color: var(--darkGray-color);
+      text-decoration: none;
+
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.2rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--red-color);
+      }
+    }
+
+    &:hover {
+      div {
+        background-color: var(--red-color);
+      }
+    }
+  }
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
+//------------Hamburger Menu----------------
+.app__navbar-menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  div {
+    z-index: 6;
+  }
+  .app__navbar-hamburger {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0e0e0e;
+
+    padding: 1rem;
+
+    width: 70%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    z-index: 4;
+    box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+
+    ul {
+      border: none;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      li {
+        margin: 1rem;
+        a {
+          font-family: var(--font-league);
+          color: var(--darkGray-color);
+          text-decoration: none;
+          font-weight: 600;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--red-color);
+          }
+        }
+      }
+    }
+    @media screen and (min-width: 900px) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    display: none;
+  }
+}
